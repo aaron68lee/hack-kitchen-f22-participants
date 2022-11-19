@@ -13,8 +13,24 @@
   }
 }
 
+.center {
+  text-align: center;
+}
+
+.navbar {
+  border: 3px solid;
+  border-width: medium;
+  text-align: center;
+  color: rgb(205, 107, 2);
+}
+
+.framed {
+  border: 5px solid;
+  text-align: center;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: #282c34; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;

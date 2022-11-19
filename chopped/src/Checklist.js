@@ -1,12 +1,20 @@
-//import React, {useState} from "react";
-import React from "react";
+import React, {useState} from "react";
+//import React from "react";
 
-function check()
+function Check()
 {
-    const checkList = ["Flour", "Eggs", "Butter"];
-    //const [checked, setChecked] = useState([]);
+    const checkList = ["Flour", "Eggs", "Butter", "Banana", "Cinnamon", "Baking Soda", "Salt", "Milk"];
+    const [checked, setChecked] = useState([]);
 
-    /*const handleCheck = (event) => {
+
+    // Generate string of checked items
+    const checkedItems = checked.length
+    ? checked.reduce((total, item) => {
+        return total + ", " + item;
+        })
+    : "";
+
+    const handleCheck = (event) => {
         var updatedList = [...checked];
         if (event.target.checked) {
           updatedList = [...checked, event.target.value];
@@ -14,12 +22,35 @@ function check()
           updatedList.splice(checked.indexOf(event.target.value), 1);
         }
         setChecked(updatedList);
-    };*/
+    };
+
+    // Return classes based on whether item is checked
+    var isChecked = (item) =>
+    checked.includes(item) ? "checked-item" : "not-checked-item";
 
     return(
     <div>
-        <div className="title">Your CheckList:</div>
+        <h2>
+        <div className="title">Ingredient List:</div>
             {/*<p>Different checklist items/p> */}
+        </h2>
+        <br></br>
+
+        <div className="list-container">
+        {checkList.map((item, index) => (
+            <div key={index}>
+            <span>{item}</span>
+            </div>
+        ))}
+        </div>
+        
+        <br></br>
+
+        <h3>
+            <div>
+            {`Already obtained: ${checkedItems}`}
+            </div>
+        </h3>
 
         <form action="/action_page.php">
             
@@ -28,4 +59,4 @@ function check()
     );
 }
 
-export default check;
+export default Check;

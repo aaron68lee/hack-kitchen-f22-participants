@@ -25,10 +25,12 @@
 }
 
 .App-footer {
-    text-align: center;
-    padding: 3px;
-    background-color: DarkSalmon;
-    color: white;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: DarkSalmon;
+   color: white;
 }
 
 .App-link {

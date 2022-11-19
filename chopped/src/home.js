@@ -7,9 +7,14 @@ function Home() {
         <img src="assets/pancakes.jpg" alt="Image of Banana Pancakes"> </img>
         <body>
             <h2> Steps: </h2>
-            <p> 1. In a large bowl, peel and mash all bananas.
-                
-            </p>
+            <ol type="1">
+                <li>In a large bowl, peel and mash all bananas.</li>
+                <li>Add egg, vegetable oil, and milk. Mix thoroughly.</li>
+                <li>In a separate bowl: mix flour, sugar, baking powder, salt, and chia seeds.</li>
+                <li>Combine the bowls, stir until evenly mixed. It's ok if the texture is a bit chunky!</li>
+                <li>Add chocolate chips to your liking.</li>
+            </ol>
+            <p>This recipe is a variation on </p>
         </body>
       </div>
 

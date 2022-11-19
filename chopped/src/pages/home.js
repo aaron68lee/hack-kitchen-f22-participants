@@ -3,6 +3,7 @@ import './App.css';
 function Home() {
     return (
       <div>
+        <html>
         <h1> Kenzie's Banana Pancake Recipe </h1>
         <img src="assets/pancakes.jpg" alt="Image of Banana Pancakes"> </img>
         <body>
@@ -16,6 +17,7 @@ function Home() {
             </ol>
             <p>This recipe is a variation on <a>href="https://www.allrecipes.com/recipe/20334/banana-pancakes-i/" Addean1's recipe </a> from AllRecipes.</p>
         </body>
+        </html>
       </div>
 
     );

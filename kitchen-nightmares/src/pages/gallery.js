@@ -8,7 +8,7 @@ import hellsKitchen from "../img/hells-kitchen.jpg";
 
 export default function Gallery() {
     return (
-        <>
+        <>            
             <h1>Gallery</h1>
             <Row>
                 <Container fluid>
@@ -17,10 +17,10 @@ export default function Gallery() {
                         <img src={kitchenNightmares} width={250} height={400}/>
                     </Col>
                     <Col xs={6} md={2}>
-                        <img source={masterChef} width={250} height={400}/>
+                        <img src={masterChef} width={250} height={400}/>
                     </Col>
                     <Col xs={6} md={2}>
-                        <img src={hellsKitchen} width={250} tall={400}/>
+                        <img src={hellsKitchen} width={250} height={400}/>
                     </Col>
                     </Row>
                 </Container>

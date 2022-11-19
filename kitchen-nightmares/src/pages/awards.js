@@ -4,28 +4,28 @@ import img from "../img/fanart30.jpeg";
 
 export default function Awards() {
     return (
-        <>
-            <h1>Awards</h2>
+        <div>
+            <h1>Awards</h1>
             <ul>
                 <li>
-                    restaurant gordodn ramsay in london voted top restraurtn uk and has 3 michele stars
+                    Gordon Ramsay in London voted top restuarant United Kindom and has 3 Michellin stars
                 </li>
                 <li>
-                    officer of the order of the british empire (appointed by quieen elizatbeth) rip
+                    Officer of the order of the british empire (appointed by Queen Elizabeth) Rest in Peace
                 </li>
                 <li>
-                    guinessess owrld record for fastest time to fillet a fish 1 MINUTE 5 seconds
+                    Guiness world record for fastest time to fillet a fish: 1 MINUTE 5 seconds
                 </li>
                 <li>
                     <img src={img}/>
                 </li>
                 <li>
-                    guiness wrold record for longest pasta sheet roleld in 60 seconds 1.45 mieteres wth is a meter
-                </ul>
+                    Guiness world record for longest pasta sheet rolled in 60 seconds: 1.45 meters
+                </li>
                 <li>
-                    100 most powerful people
+                    List of 100 most powerful people
                 </li>
             </ul>
-        </>
+        </div>
     );
 };

@@ -14,7 +14,7 @@ function Home() {
                 <li>Combine the bowls, stir until evenly mixed. It's ok if the texture is a bit chunky!</li>
                 <li>Add chocolate chips to your liking.</li>
             </ol>
-            <p>This recipe is a variation on </p>
+            <p>This recipe is a variation on <a>href="https://www.allrecipes.com/recipe/20334/banana-pancakes-i/" Addean1's recipe </a> from AllRecipes.</p>
         </body>
       </div>
 

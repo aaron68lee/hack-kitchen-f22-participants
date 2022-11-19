@@ -28,7 +28,7 @@
    position: fixed;
    left: 0;
    bottom: 0;
-   width: 100%;
+   width: 10%;
    background-color: DarkSalmon;
    color: white;
 }
@@ -45,6 +45,7 @@
     transform: rotate(360deg);
   }
 }
+<<<<<<< HEAD
 
 body {
   background-color: #222323;
@@ -93,3 +94,5 @@ p {
   background-color: #f0f6f0;
   color: #222323;
 }
+=======
+>>>>>>> 79bab9b (working)

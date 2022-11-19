@@ -28,19 +28,21 @@ function Check()
     var isChecked = (item) =>
     checked.includes(item) ? "checked-item" : "not-checked-item";
 
+    // ===============================
+
     return(
     <div>
         <h2>
         <div className="title">Ingredient List:</div>
             {/*<p>Different checklist items/p> */}
         </h2>
+
         <br></br>
 
+        
         <div className="list-container">
         {checkList.map((item, index) => (
-            <div key={index}>
-            <span>{item}</span>
-            </div>
+            <input key={index} type="checkbox" label={item}/>
         ))}
         </div>
         

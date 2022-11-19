@@ -4,18 +4,19 @@ export default function Home() {
     return (
         <>
             <h1>Welcome to Gordon Ramsey's fanpage!</h1>
-            <iframe width="1750" height="315" src="https://www.youtube.com/embed/rEMXENwQZA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width={1750} height={315} src="https://www.youtube.com/embed/rEMXENwQZA4" title="YouTube video player" frameborder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             
             <p>I love gordon!!!1!!
             I don't realy know much web dev but i knew that  i had to make this website. and i ma very perserverent person so i will endure through this <h3>pain</h3> that is the process of making this in order to appease my my man 
             </p>
             <p>
-                anyway hewrws some fanart i did yesterday i think it looks prety good hope you like it gardon!!!!!!!! &lt;3
+                Anyways here's some fanart I did yesterday i think it looks prety good hope you like it gardon!!!!!!!! UwU
             </p>
-            fanart1.png
-            fanart2.jpeg
-            fanart3.jpeg
-            fanart4.jpeg
+
+            <img src="/img/fanart1.png"></img>
+            <img src="/img/fanart2.png"></img>
+            <img src="/img/fanart3.png"></img>
+            <img src="/img/fanart4.png"></img>
 
             <section>
                 <h2>Blog</h2>

@@ -3,7 +3,7 @@ import './App.css';
 function Home() {
     return (
       <div>
-        <h1> Kenzie's Banana Pancakes </h1>
+        <h1> Kenzie's Banana Pancake Recipe </h1>
         <img src="assets/pancakes.jpg" alt="Image of Banana Pancakes"> </img>
         <body>
             <h2> Steps: </h2>

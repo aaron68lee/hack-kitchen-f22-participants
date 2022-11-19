@@ -43,3 +43,33 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #222323;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+
+a {
+  color: #222323;
+}
+
+p {
+  color:#f0f6f0;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.Default {
+  font-family: 'Neucha';
+  border: 3px solid;
+  border-color: #f0f6f0;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 15px;
+  text-align: center;
+  background-color: #f0f6f0;
+  color: #222323;
+}

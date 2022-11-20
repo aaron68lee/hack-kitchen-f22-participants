@@ -5,7 +5,7 @@ Source: https://ideone.com/7sFFo0
 '''
 import re
 import sys
- 
+
 def push(match):
     global stack
     stack.append(len(match.group(1)))

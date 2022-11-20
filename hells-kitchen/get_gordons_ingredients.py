@@ -73,7 +73,7 @@ def austin(ingredients, budget):
 # AARON
 
 def get_ingredients(ingredients, budget):
-    ingredients.sort(key=lambda x: (x[1], x[2]))
+    ingredients.sort(key=lambda x: (x[1], x[2])) # prioirtize by min base cost
     cart = []
     for i in range(len(ingredients)):
         cost = ingredients[i][1]
@@ -82,6 +82,7 @@ def get_ingredients(ingredients, budget):
             cart.append([ingredients[i][0], 1])
             ingredients[i][2] -= 1
 
+    ingredients.sort(key=lambda x: (x[1], x[2])) # prioirtize by min required
     min = ingredients[i][2]
     for i in range(len(ingredients)):
         #cost = ingredients[i][1] * (min - 1) # cost for all min required

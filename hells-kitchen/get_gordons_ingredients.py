@@ -48,13 +48,83 @@ Explanation:
     This totals 6.46 < 7
 """
 
+# This is austin's submission i just left it here cuz i wanna see if i got it right lol
+def austin(ingredients, budget):
+    ingredients.sort(key=lambda x: (x[1], x[2]))
+    res = []
+    for ingredient, cost, _ in ingredients:
+        if budget - cost < 0:
+            break
+        res.append([ingredient, 1])
+        budget -= cost
+        
+    for i in range(len(ingredients)):
+        ingredient, cost, amount_required = ingredients[i]
+        if budget - cost * (amount_required - 1) < 0:
+            while budget - cost > 0:
+                res[i][1] += 1
+                budget -= cost
+            return res
+        res[i][1] = amount_required
+        budget -= cost * (amount_required - 1)
+    return res
+    
 # Dessert service starts in 30 minutes, so complete the function asap and don't disappoint Gordon!
+# AARON
+
 def get_ingredients(ingredients, budget):
-    # Write your code here
-    return ingredients
+    ingredients.sort(key=lambda x: (x[1], x[2]))
+    cart = []
+    for i in range(len(ingredients)):
+        cost = ingredients[i][1]
+        if (budget - cost) >= 0: # buy one of each
+            budget -= cost # cost of item i
+            cart.append([ingredients[i][0], 1])
+            ingredients[i][2] -= 1
+
+    min = ingredients[i][2]
+    for i in range(len(ingredients)):
+        #cost = ingredients[i][1] * (min - 1) # cost for all min required
+        #amt = max(min, )# number you can actually buy
+
+        # buy all min cost items
+        cost = ingredients[i][1]
+        while (budget - cost) >= 0: # buy one of each
+            budget -= cost # cost of item i
+            thing = ingredients[i][0]
+            newAmt = cart[i][1] + 1
+            cart[i] = [thing, newAmt]
+            ingredients[i][2] -= 1
+
+    #amt = max(min, )# number you can actually buy
+
+    #print (ingredients[0])
+    return cart
 
 if __name__ == '__main__':
     # Edit ingredients and budget to test your program
-    ingredients = [["water", 2.99, 1]]
-    budget = 0
+
+    # Test Case 1
+    print("=== Test Case 1 ===")
+    ingredients = [["flour", 3.59, 2],
+                ["egg", 0.99, 6],
+                ["baking soda", 3.49, 1]]
+    budget = 13
+    print("austin output:")
+    print(austin(ingredients, budget))
+    print("-------")
+    print("yalls output:")
+    print(get_ingredients(ingredients, budget))
+
+    print()
+    print("=== Test Case 2 ===")
+    ingredients = [["flour", 3.59, 2],
+                ["egg", 0.99, 6],
+                ["baking soda", 3.49, 1]]
+    budget = 7
+    
+    print("austin output:")
+    print(austin(ingredients, budget))
+    print("-------")
+    print("yalls output:")
     print(get_ingredients(ingredients, budget))
